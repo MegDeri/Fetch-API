@@ -17,8 +17,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   background-color: #55acee;
+  color: $second-color; 
 }
-
+ 
 main {
   text-align: center;
   width: 80%;
@@ -33,12 +34,11 @@ header {
 }
 
 .box {
-    padding: 20px 0;
-    color: $second-color;
-}
-
-h2, h3 {
+  padding: 20px 0;
+  color: $second-color;
+  h2, h3 {
     padding: 15px 0;
+  }
 }
 
 .buttons {
@@ -61,5 +61,4 @@ h2, h3 {
       color: $main-color;
     }
   }
-  
 }

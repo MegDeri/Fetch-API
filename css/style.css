@@ -6,6 +6,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   background-color: #55acee;
+  color: #eeeaea;
 }
 
 main {
@@ -26,7 +27,7 @@ header {
   color: #eeeaea;
 }
 
-h2, h3 {
+.box h2, .box h3 {
   padding: 15px 0;
 }
 
