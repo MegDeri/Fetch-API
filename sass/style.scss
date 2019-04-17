@@ -32,6 +32,15 @@ header {
   font-size: 24px;
 }
 
+.box {
+    padding: 20px 0;
+    color: $second-color;
+}
+
+h2, h3 {
+    padding: 15px 0;
+}
+
 .buttons {
   padding: 10px;
   button {
