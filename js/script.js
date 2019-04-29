@@ -10,12 +10,12 @@ function getQuote() {
 }
 
 function createTweet(input) {
-  var data = input[0];
-
   var dataElement = document.createElement('div');
   if(input.length === 0) {
     dataElement.innerHTML = "Something went wrong...we are not able to display a quote." 
+    return;
   }
+  var data = input[0];
   dataElement.innerHTML = data.content;
   var quoteText = dataElement.innerText.trim();
   var quoteAuthor = data.title;
