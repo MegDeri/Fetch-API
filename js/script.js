@@ -10,9 +10,9 @@ function getQuote() {
 }
 
 function createTweet(input) {
-  
+  var dataElement = document.querySelector('.box');
   if(input.length === 0) {
-    document.querySelector('.box').innerText = "Something went wrong...we are not able to display a quote." 
+    dataElement.innerHTML = "Something went wrong...we are not able to display a quote." 
     return;
   }
   var data = input[0];
