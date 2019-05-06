@@ -16,8 +16,7 @@ function createTweet(input) {
   }
   var data = input[0];
 
-    var dataElement = document.createElement('div');
-    dataElement.innerHTML = data.content;
+    
     var quoteText = data.content.trim();
     var quoteAuthor = data.title;
 
@@ -31,7 +30,7 @@ function createTweet(input) {
     getQuote();
   } else {
     var tweet = tweetLink + encodeURIComponent(tweetText);
-    document.querySelector('.quote').innerText = quoteText;
+    document.querySelector('.quote').innerHTML = quoteText;
     document.querySelector('.author').innerText = "Author: " + quoteAuthor;
     document.querySelector('.tweet').setAttribute('href', tweet);
   }
