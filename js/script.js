@@ -5,8 +5,8 @@ function getQuote() {
   fetch(quoteUrl, { cache: "no-store" })
     .then(function(resp) {
       return resp.json();
-    })
-    .then(createTweet);
+  })
+  .then(createTweet);
 }
 
 function createTweet(input) {
@@ -15,14 +15,12 @@ function createTweet(input) {
     return;
   }
   var data = input[0];
+  var quoteText = data.content.trim();
+  var quoteAuthor = data.title;
 
-    
-    var quoteText = data.content.trim();
-    var quoteAuthor = data.title;
-
-    if (!quoteAuthor.length) {
-        quoteAuthor = "Unknown author";
-    }
+  if (!quoteAuthor.length) {
+    quoteAuthor = "Unknown author";
+  }
 
   var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
 
